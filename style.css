@@ -40,10 +40,23 @@ h1 {
   padding: 16px;
   border-radius: 10px;
   width: 180px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  height: 240px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
   text-align: center;
+   display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* 내용 위, 버튼 아래로 분리 */
 }
 
+.book-card-content {
+  flex-grow: 1;
+}
+
+.book-card-buttons {
+   display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
 .book-card h3 {
   margin: 8px 0;
   color: #222;
@@ -55,12 +68,12 @@ h1 {
 }
 
 .book-card button {
-  margin: 6px 4px;
   padding: 6px 10px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
   font-size: 13px;
+
 }
 
 .book-card .toggle-read {

@@ -6,20 +6,24 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>My Library</h1>
-  
-  <button id="newBookBtn">+ New Book</button>
+  <h1>📚 My Library</h1>
+
+  <button id="newBookBtn">＋ New Book</button>
   <div id="library"></div>
+
   <dialog id="bookFormDialog">
-    <form id="bookForm">
-      <h2>Add a new book</h2>
+    <form id="bookForm" method="dialog">
+      <h2>Add a New Book</h2>
       <input type="text" id="title" placeholder="Title" required>
       <input type="text" id="author" placeholder="Author" required>
-      <input type="number" id="pages" placeholder="Pages" required>
+      <input type="number" id="pages" placeholder="Number of pages" required>
       <label>
-        <input type="checkbox" id="read"> Read?
+        <input type="checkbox" id="read"> Already read?
       </label>
-      <button type="submit">Add Book</button>
+      <div class="form-buttons">
+        <button type="submit">Add</button>
+        <button type="button" id="cancelBtn">Cancel</button>
+      </div>
     </form>
   </dialog>
 
